@@ -12,7 +12,7 @@ describe("getAPIKey", () => {
     const headers: IncomingHttpHeaders = { authorization: "123" };
     expect(getAPIKey(headers)).toBeNull();
 
-    const headers2: IncomingHttpHeaders = { authorization: "ApiKey 123" };
+    const headers2: IncomingHttpHeaders = { authorization: "ApiKeyy 123" };
     expect(getAPIKey(headers2)).toBeNull();
   });
 
